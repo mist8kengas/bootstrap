@@ -1,0 +1,89 @@
+/*
+    Bootstrap v1.0.0
+    GitHub @ https://github.com/mist8kengas/bootstrap
+    © Apache2 License
+*/
+
+/* element positioning/formatting */
+.text-centered {
+    text-align: center !important;
+}
+.centered {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pill-style button class: */
+.btn-pill {
+    display: inline-block;
+    background: var(--btn_pill_PRIMARY);
+    color: var(--btn_pill_TEXT);
+    padding: 16px 24px;
+    margin: 0px 4px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.btn-pill:hover {
+    background: var(--btn_pill_HOVER);
+    border-color: var(--btn_pill_HOVER);
+}
+
+/* filled pill */
+.btn-pill.fill {
+    background: var(--btn_pill_PRIMARY);
+    color: var(--btn_pill_TEXT);
+    
+    border: 1px solid var(--btn_pill_PRIMARY);
+}
+.btn-pill.fill:hover {
+    background: var(--btn_pill_HOVER);
+    border-color: var(--btn_pill_HOVER);
+}
+.btn-pill.fill.active {
+    background: transparent;
+    color: var(--btn_pill_PRIMARY);
+}
+.btn-pill.fill.active:hover {
+    background: var(--btn_pill_PRIMARY);
+    color: var(--btn_pill_TEXT);
+    border-color: var(--btn_pill_PRIMARY);
+}
+
+/* empty pill */
+.btn-pill.empty {
+    background: transparent;
+    color: var(--btn_pill_PRIMARY);
+    padding: 16px 24px;
+
+    border: 1px solid var(--btn_pill_PRIMARY);
+}
+.btn-pill.empty:hover {
+    background: var(--btn_pill_PRIMARY);
+    color: var(--btn_pill_TEXT);
+}
+.btn-pill.empty.active {
+    background: var(--btn_pill_PRIMARY);
+    color: var(--btn_pill_TEXT);
+}
+.btn-pill.empty.active:hover {
+    background: var(--btn_pill_PRIMARY);
+    border-color: var(--btn_pill_PRIMARY);
+}
+
+/* config */
+:root {
+    --btn_pill_PRIMARY: #FFFFFF;
+    --btn_pill_SECONDARY: #FFFFFF;
+    --btn_pill_TEXT: #000000;
+    --btn_pill_HOVER: #CCCCCC;
+}
+
+/* remove line break user-select */
+br {
+    user-select: none;
+}
